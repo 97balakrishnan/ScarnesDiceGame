@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.scarnesdice.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/player_score"
+        android:id="@+id/pscore"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/computer_score"
+        android:id="@+id/cscore"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/pscore"
+        android:layout_marginStart="31dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/dice1"
+        android:contentDescription="@string/dice_image"
+        android:layout_below="@+id/message"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/roll_button"
+        android:id="@+id/broll"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="90dp"
+        android:onClick="RollClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hold_button"
+        android:id="@+id/bhold"
+        android:layout_alignTop="@+id/broll"
+        android:layout_centerHorizontal="true"
+        android:onClick="HoldClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_button"
+        android:id="@+id/breset"
+        android:layout_alignTop="@+id/bhold"
+        android:layout_toEndOf="@+id/imageView"
+        android:onClick="ResetClick"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/turnscore"
+        android:id="@+id/uturn"
+        android:layout_below="@+id/pscore"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/cturn"
+        android:layout_alignEnd="@+id/pscore" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/turnscore2"
+        android:id="@+id/cturn"
+        android:layout_below="@+id/cscore"
+        android:layout_alignStart="@+id/cscore"
+        android:layout_alignEnd="@+id/bhold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/message"
+        android:id="@+id/message"
+        android:layout_below="@+id/cturn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp" />
+</RelativeLayout>

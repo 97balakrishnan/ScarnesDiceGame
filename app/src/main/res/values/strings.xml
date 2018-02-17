@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Scarne\'s dice</string>
+    <string name="player_score">Your score: 0</string>
+    <string name="computer_score">Computer score: 0</string>
+    <string name="dice_image">dice_image</string>
+    <string name="roll_button">ROLL</string>
+    <string name="hold_button">HOLD</string>
+    <string name="reset_button">RESET</string>
+    <string name="turnscore">turnscore:</string>
+    <string name="turnscore2">turnscore:</string>
+    <string name="message">Your Turn!!</string>
+</resources>
